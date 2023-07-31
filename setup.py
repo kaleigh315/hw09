@@ -1,12 +1,10 @@
-from distutils.core import setup
-setup(
-    name='mypackagedir',
-    version='1.0.0',
-    url='https://github.com/kaleigh315/mypackage',
-    author='Kaleigh OHara',
-    author_email='ear3cg@virginia.edu',
-    description='Description of my package',
-    license='MIT',
-    packages=['M09'],    
-    install_requires=['numpy >= 1.11.1', 'matplotlib >= 1.5.1'],
-)
+from setuptools import setup, find_packages
+
+setup(name='bookpackage',
+      version='0.1',
+      description='book lover exercise',
+      url='http://github.com/kaleigh315/hw09',
+      author='Kaleigh OHara',
+      author_email='ear3cg@virginia.edu',
+      license='MIT',
+      packages= find_packages())
